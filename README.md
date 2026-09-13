@@ -80,7 +80,7 @@ Classification
        ▼
 Prediction / Result
 
-# ✨ Features
+#✨ Features
 
 - EEG `.EDF` file processing
 - EEG signal preprocessing
