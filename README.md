@@ -79,3 +79,19 @@ Classification
        │
        ▼
 Prediction / Result
+
+✨ Features
+EEG .EDF file processing
+EEG signal preprocessing
+Multi-channel EEG analysis
+Feature extraction
+Feature scaling
+PCA dimensionality reduction
+Variational Quantum Circuit classifier
+REST API using FastAPI
+React-based web interface
+Demo EEG analysis
+Model health/status endpoint
+Dockerized backend and frontend
+Modular model artifacts
+Versioned model architecture
