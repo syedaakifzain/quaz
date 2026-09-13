@@ -1,0 +1,24 @@
+# ============================================================
+# Application Configuration — Quantum EEG Signal Classifier
+# ============================================================
+# Read by the Streamlit inference application.
+# ============================================================
+
+model:
+  version: v1.0.0
+  artifacts_dir: models
+
+upload:
+  max_file_size_mb: 500
+  allowed_extensions:
+    - .edf
+
+ui:
+  app_name: Quantum EEG Signal Classifier
+  app_subtitle: Hybrid Quantum-Classical Seizure Detection
+  page_icon: 🧠
+  theme: dark
+
+aggregation:
+  # Recording-level: any segment predicted as seizure triggers alert
+  min_seizure_segments: 1

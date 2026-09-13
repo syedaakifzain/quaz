@@ -1,0 +1,42 @@
+# ============================================================
+# Feature Configuration — Quantum EEG Signal Classifier
+# ============================================================
+# This file defines the feature extraction parameters shared
+# between training and inference. Changes here affect BOTH
+# pipelines. After retraining, update model artifacts.
+# ============================================================
+
+channels:
+  - FP1-F7
+  - F3-C3
+  - FZ-CZ
+  - P4-O2
+
+segment_duration_seconds: 2
+
+filter:
+  low_hz: 0.5
+  high_hz: 40.0
+
+wavelet:
+  name: db4
+  level: 4
+
+delta_band:
+  low_hz: 0.5
+  high_hz: 4.0
+
+pca:
+  n_components: 4
+
+scaler:
+  type: MinMaxScaler
+  feature_range_min: 0.0
+  feature_range_max: 3.14159265358979  # π
+
+features:
+  - wavelet_approx_energy
+  - wavelet_energy
+  - shannon_entropy
+  - delta_power
+  - hjorth_mobility

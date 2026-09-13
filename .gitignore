@@ -1,0 +1,142 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*$py.class
+
+# ============================================================
+# Virtual Environments
+# ============================================================
+.venv/
+venv/
+env/
+ENV/
+
+# ============================================================
+# IDE / Editors
+# ============================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Environment / Secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+
+# ============================================================
+# Python Packaging / Distribution
+# ============================================================
+dist/
+build/
+*.egg-info/
+*.egg
+
+# ============================================================
+# Testing / Coverage
+# ============================================================
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ============================================================
+# Node / Frontend
+# ============================================================
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# ============================================================
+# EEG / Training Data
+# ============================================================
+
+# Raw EEG recordings — DO NOT upload
+*.edf
+*.EDF
+
+# CHB-MIT dataset
+data/training/
+data/uploads/
+
+# ============================================================
+# Training Checkpoints
+# ============================================================
+**/checkpoints/
+
+# ============================================================
+# Logs / Temporary Files
+# ============================================================
+*.log
+*.tmp
+*.temp
+logs/
+tmp/
+temp/
+
+# ============================================================
+# Generated Outputs
+# ============================================================
+outputs/
+results/
+reports/generated/
+
+# ============================================================
+# OS
+# ============================================================
+.DS_Store
+Thumbs.db
+
+# ============================================================
+# Jupyter
+# ============================================================
+.ipynb_checkpoints/
+
+# Raw EEG recordings — never commit
+test_data/*.edf
+test_data/*.EDF
+
+# Local experiment / training logs
+docker-build-log.txt
+smoke_test_output.txt
+training_output.txt
+training_output_final.txt
+training_progress.txt
+scripts/chb06_eval_output.txt
+
+# Training checkpoints
+models/grid_search_checkpoint*.json
+
+
+# Local planning / generated artifacts
+implementation_plannivi
+
+# Local experiment / training logs
+docker-build-log.txt
+smoke_test_output.txt
+training_output.txt
+training_output_final.txt
+training_progress.txt
+scripts/chb06_eval_output.txt
+
+# Training search checkpoints
+models/grid_search_checkpoint*.json
+
+# Internal AI/development prompts
+# MASTER PROMPT — GENERATE COMPLETE.txt
+Antigravity Training Pipeline Prompt.md
+
+#technical report
+Quantum_EEG_Signal_Classifier_Complete_Technical_Report.pdf
+
+# Internal AI/development prompts
+# MASTER PROMPT — GENERATE COMPLETE.txt
+Antigravity Training Pipeline Prompt.md

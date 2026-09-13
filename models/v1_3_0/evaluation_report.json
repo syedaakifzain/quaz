@@ -1,0 +1,237 @@
+{
+  "report_version": "2.0",
+  "methodology": "nested_loso_with_rotating_inner_validation",
+  "generated_at": "2026-08-27T12:22:37.055979",
+  "selected_configuration": {
+    "pca_dim": 4,
+    "class_ratio": 1.0,
+    "threshold": 0.6,
+    "aggregated_inner_val_f1": 0.08422206188165443,
+    "aggregated_inner_val_sensitivity": 0.21783128102871588,
+    "aggregated_inner_val_precision": 0.055744422773710625
+  },
+  "grid_search": {
+    "pca_dims_tested": [
+      4
+    ],
+    "ratios_tested": [
+      1.0,
+      2.0
+    ],
+    "thresholds_tested": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "total_vqc_fits": 40,
+    "grid_search_seconds": 1.2487549781799316
+  },
+  "outer_test_folds": [
+    {
+      "fold": 0,
+      "test_subject": "chb01",
+      "train_subjects": [
+        "chb02",
+        "chb03",
+        "chb04",
+        "chb05"
+      ],
+      "test_segments": 11962,
+      "selected_pca_dim": 4,
+      "selected_ratio": 1.0,
+      "selected_threshold": 0.6,
+      "metrics": {
+        "accuracy": 0.9805216518976759,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "sensitivity": 0.0,
+        "specificity": 0.9991481386830224,
+        "confusion_matrix": [
+          [
+            11729,
+            10
+          ],
+          [
+            223,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "fold": 1,
+      "test_subject": "chb02",
+      "train_subjects": [
+        "chb01",
+        "chb03",
+        "chb04",
+        "chb05"
+      ],
+      "test_segments": 4079,
+      "selected_pca_dim": 4,
+      "selected_ratio": 1.0,
+      "selected_threshold": 0.6,
+      "metrics": {
+        "accuracy": 0.8860014709487619,
+        "precision": 0.07432432432432433,
+        "recall": 0.3793103448275862,
+        "f1_score": 0.12429378531073447,
+        "sensitivity": 0.3793103448275862,
+        "specificity": 0.8970440881763527,
+        "confusion_matrix": [
+          [
+            3581,
+            411
+          ],
+          [
+            54,
+            33
+          ]
+        ]
+      }
+    },
+    {
+      "fold": 2,
+      "test_subject": "chb03",
+      "train_subjects": [
+        "chb01",
+        "chb02",
+        "chb04",
+        "chb05"
+      ],
+      "test_segments": 12600,
+      "selected_pca_dim": 4,
+      "selected_ratio": 1.0,
+      "selected_threshold": 0.6,
+      "metrics": {
+        "accuracy": 0.9492857142857143,
+        "precision": 0.032188841201716736,
+        "recall": 0.07389162561576355,
+        "f1_score": 0.04484304932735426,
+        "sensitivity": 0.07389162561576355,
+        "specificity": 0.963620230700976,
+        "confusion_matrix": [
+          [
+            11946,
+            451
+          ],
+          [
+            188,
+            15
+          ]
+        ]
+      }
+    },
+    {
+      "fold": 3,
+      "test_subject": "chb04",
+      "train_subjects": [
+        "chb01",
+        "chb02",
+        "chb03",
+        "chb05"
+      ],
+      "test_segments": 19179,
+      "selected_pca_dim": 4,
+      "selected_ratio": 1.0,
+      "selected_threshold": 0.6,
+      "metrics": {
+        "accuracy": 0.9172011053756713,
+        "precision": 0.0132404181184669,
+        "recall": 0.09947643979057591,
+        "f1_score": 0.023370233702337023,
+        "sensitivity": 0.09947643979057591,
+        "specificity": 0.9254265852117126,
+        "confusion_matrix": [
+          [
+            17572,
+            1416
+          ],
+          [
+            172,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "fold": 4,
+      "test_subject": "chb05",
+      "train_subjects": [
+        "chb01",
+        "chb02",
+        "chb03",
+        "chb04"
+      ],
+      "test_segments": 9000,
+      "selected_pca_dim": 4,
+      "selected_ratio": 1.0,
+      "selected_threshold": 0.6,
+      "metrics": {
+        "accuracy": 0.8264444444444444,
+        "precision": 0.06873315363881402,
+        "recall": 0.3617021276595745,
+        "f1_score": 0.11551528878822197,
+        "sensitivity": 0.3617021276595745,
+        "specificity": 0.8414774030740996,
+        "confusion_matrix": [
+          [
+            7336,
+            1382
+          ],
+          [
+            180,
+            102
+          ]
+        ]
+      }
+    }
+  ],
+  "aggregate_outer_test_metrics": {
+    "accuracy": {
+      "mean": 0.9118908773904536,
+      "std": 0.053118941680419966
+    },
+    "precision": {
+      "mean": 0.0376973474566644,
+      "std": 0.029510444723598855
+    },
+    "recall": {
+      "mean": 0.18287610757870004,
+      "std": 0.1567430685169538
+    },
+    "f1_score": {
+      "mean": 0.06160447142572954,
+      "std": 0.0497478429859165
+    },
+    "sensitivity": {
+      "mean": 0.18287610757870004,
+      "std": 0.1567430685169538
+    },
+    "specificity": {
+      "mean": 0.9253432891692327,
+      "std": 0.05430767649304397
+    },
+    "roc_auc": {
+      "mean": null,
+      "std": null
+    }
+  },
+  "production_model_subjects": [
+    "chb01",
+    "chb02",
+    "chb03",
+    "chb04",
+    "chb05"
+  ],
+  "production_balanced_samples": 1972,
+  "total_training_time_seconds": 3637.1795630455017,
+  "limitations": "Nested validation with only 3 subjects has high variance. Inner validation metrics may not generalize."
+}

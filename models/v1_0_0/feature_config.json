@@ -1,0 +1,25 @@
+{
+  "channels": [
+    "FP1-F7",
+    "F3-C3",
+    "FZ-CZ",
+    "P4-O2"
+  ],
+  "features": [
+    "wavelet_energy",
+    "shannon_entropy",
+    "delta_power",
+    "hjorth_mobility"
+  ],
+  "segment_duration_seconds": 2.0,
+  "wavelet_name": "db4",
+  "wavelet_level": 4,
+  "delta_band_low_hz": 0.5,
+  "delta_band_high_hz": 4.0,
+  "pca_n_components": 4,
+  "scaler_type": "MinMaxScaler",
+  "scaler_range_min": 0.0,
+  "scaler_range_max": 3.14159265358979,
+  "total_features": 16,
+  "schema_hash": "73c420705b5c6efa2f957ec301e8699e1e4cb805b77d4b62c3f47892e6c88716"
+}

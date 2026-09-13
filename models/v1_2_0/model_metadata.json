@@ -1,0 +1,75 @@
+{
+  "model_name": "quantum_eeg_vqc",
+  "model_version": "v1.2.0",
+  "classifier": "VQC",
+  "qubits": 4,
+  "threshold": 0.5,
+  "best_ratio": 2.0,
+  "selected_pca_dim": 4,
+  "feature_count_before_pca": 20,
+  "feature_count_after_pca": 4,
+  "channels": [
+    "FP1-F7",
+    "F3-C3",
+    "FZ-CZ",
+    "P4-O2"
+  ],
+  "segment_duration_seconds": 2.0,
+  "filter_low_hz": 0.5,
+  "filter_high_hz": 40.0,
+  "feature_schema_hash": "17cc0a5e2a0e09881664b43b3b81c3688aeb950e5d5e9373afc78c68776f014e",
+  "training_subjects": [
+    "chb01",
+    "chb02",
+    "chb03",
+    "chb04",
+    "chb05"
+  ],
+  "vqc_config": {
+    "feature_map": "ZZFeatureMap",
+    "feature_map_reps": 2,
+    "ansatz": "RealAmplitudes",
+    "ansatz_reps": 3,
+    "entanglement": "full",
+    "optimizer": "COBYLA",
+    "maxiter": 200
+  },
+  "pca_explained_variance_ratio": [
+    0.38729385989185616,
+    0.20225280181158442,
+    0.1129834297037889,
+    0.04759209515053497
+  ],
+  "pca_total_explained_variance": 0.7501221865577645,
+  "evaluation_metrics": {
+    "accuracy": {
+      "mean": 0.7951075416969109,
+      "std": 0.15627062806486794
+    },
+    "precision": {
+      "mean": 0.02709868603624112,
+      "std": 0.02080011693261712
+    },
+    "recall": {
+      "mean": 0.16929339553043382,
+      "std": 0.1058438520775324
+    },
+    "f1_score": {
+      "mean": 0.04573776701801202,
+      "std": 0.03547394192223482
+    },
+    "sensitivity": {
+      "mean": 0.16929339553043382,
+      "std": 0.1058438520775324
+    },
+    "specificity": {
+      "mean": 0.80632856045433,
+      "std": 0.15994253268980432
+    },
+    "roc_auc": {
+      "mean": null,
+      "std": null
+    }
+  },
+  "created_at": "2026-08-22T20:13:47.095879"
+}

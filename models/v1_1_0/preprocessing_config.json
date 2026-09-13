@@ -1,0 +1,11 @@
+{
+  "filter_low_hz": 0.5,
+  "filter_high_hz": 40.0,
+  "segment_duration_seconds": 2.0,
+  "channels": [
+    "FP1-F7",
+    "F3-C3",
+    "FZ-CZ",
+    "P4-O2"
+  ]
+}

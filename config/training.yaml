@@ -1,0 +1,35 @@
+# ============================================================
+# Training Configuration — Quantum EEG Signal Classifier
+# ============================================================
+# Developer-only. The Streamlit app never reads this file.
+# ============================================================
+
+dataset:
+  base_dir: data/training
+  subjects:
+    - chb01
+    - chb02
+    - chb03
+    - chb04
+    - chb05
+
+balancing:
+  strategy: undersample_majority
+  random_seed: 42
+
+evaluation:
+  method: leave_one_subject_out
+
+vqc:
+  feature_map: ZZFeatureMap
+  feature_map_reps: 2
+  ansatz: RealAmplitudes
+  ansatz_reps: 3
+  entanglement: full
+  optimizer: COBYLA
+  maxiter: 200
+  random_seed: 42
+
+output:
+  model_version: v1.3.0
+  artifacts_dir: models
