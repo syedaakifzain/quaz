@@ -80,40 +80,41 @@ Classification
        ▼
 Prediction / Result
 
-✨ Features
-EEG .EDF file processing
-EEG signal preprocessing
-Multi-channel EEG analysis
-Feature extraction
-Feature scaling
-PCA dimensionality reduction
-Variational Quantum Circuit classifier
-REST API using FastAPI
-React-based web interface
-Demo EEG analysis
-Model health/status endpoint
-Dockerized backend and frontend
-Modular model artifacts
-Versioned model architecture
+# ✨ Features
 
-🧠 Current Model
+- EEG `.EDF` file processing
+- EEG signal preprocessing
+- Multi-channel EEG analysis
+- Feature extraction
+- Feature scaling
+- PCA dimensionality reduction
+- Variational Quantum Circuit (VQC) classifier
+- REST API using FastAPI
+- React-based web interface
+- Demo EEG analysis
+- Model health/status endpoint
+- Dockerized backend and frontend
+- Modular model artifacts
+- Versioned model architecture
+
+# 🧠 Current Model
 
 The current application uses:
 
-Parameter	Value
-Model Version	v1.3.0
-Classifier	Variational Quantum Circuit (VQC)
-Number of Qubits	4
-Features Before PCA	20
-PCA Components	4
-Segment Duration	2 seconds
-Sampling Frequency	256 Hz
-Classification Threshold	0.6
-EEG Channels
+- Parameter	Value
+- Model Version	v1.3.0
+- Classifier	Variational Quantum Circuit (VQC)
+- Number of Qubits	4
+- Features Before PCA	20
+- PCA Components	4
+- Segment Duration	2 seconds
+- Sampling Frequency	256 Hz
+- Classification Threshold	0.6
+- EEG Channels
 
-The current model configuration uses:
+# The current model configuration uses:
 
-FP1-F7
-F3-C3
-FZ-CZ
-P4-O2
+-FP1-F7
+-F3-C3
+-FZ-CZ
+-P4-O2
