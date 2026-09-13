@@ -80,41 +80,46 @@ Classification
        ▼
 Prediction / Result
 
-#✨ Features
+# ✨ Features
 
-- EEG `.EDF` file processing
-- EEG signal preprocessing
-- Multi-channel EEG analysis
-- Feature extraction
-- Feature scaling
-- PCA dimensionality reduction
-- Variational Quantum Circuit (VQC) classifier
-- REST API using FastAPI
-- React-based web interface
-- Demo EEG analysis
-- Model health/status endpoint
-- Dockerized backend and frontend
-- Modular model artifacts
-- Versioned model architecture
+### 🧠 EEG `.EDF` File Processing
+- Supports processing of EEG recordings stored in `.EDF` format.
 
-# 🧠 Current Model
+### ⚡ EEG Signal Preprocessing
+- Preprocesses raw EEG signals to prepare them for feature extraction and classification.
 
-The current application uses:
+### 📡 Multi-Channel EEG Analysis
+- Analyzes multiple EEG channels simultaneously for signal classification.
 
-- Parameter	Value
-- Model Version	v1.3.0
-- Classifier	Variational Quantum Circuit (VQC)
-- Number of Qubits	4
-- Features Before PCA	20
-- PCA Components	4
-- Segment Duration	2 seconds
-- Sampling Frequency	256 Hz
-- Classification Threshold	0.6
-- EEG Channels
+### 🔍 Feature Extraction
+- Extracts relevant features from the preprocessed EEG signals.
 
-# The current model configuration uses:
+### 📏 Feature Scaling
+- Applies feature scaling to normalize the extracted EEG features before model inference.
 
--FP1-F7
--F3-C3
--FZ-CZ
--P4-O2
+### 📉 PCA Dimensionality Reduction
+- Uses Principal Component Analysis (PCA) to reduce the feature dimensionality while retaining important information.
+
+### ⚛️ Variational Quantum Circuit Classifier
+- Uses a Variational Quantum Circuit (VQC) as the quantum machine-learning classification model.
+
+### 🚀 FastAPI REST API
+- Provides REST API endpoints for EEG analysis, model inference, and system health checks.
+
+### 💻 React-Based Web Interface
+- Provides an interactive web interface for uploading EEG recordings and viewing analysis results.
+
+### 🧪 Demo EEG Analysis
+- Includes a demo workflow for testing the EEG classification pipeline using available test data.
+
+### ❤️ Model Health & Status
+- Provides a health endpoint to verify backend availability and display the active model configuration.
+
+### 🐳 Dockerized Deployment
+- Containerizes the frontend and backend using Docker and Docker Compose for simplified deployment.
+
+### 🧩 Modular Model Artifacts
+- Stores trained models, preprocessing components, PCA transformers, scalers, and configuration files as separate artifacts.
+
+### 🔄 Versioned Model Architecture
+- Maintains different model versions independently, allowing the classification pipeline to evolve over time.
