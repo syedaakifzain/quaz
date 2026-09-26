@@ -140,3 +140,15 @@ Quantum_EEG_Signal_Classifier_Complete_Technical_Report.pdf
 # Internal AI/development prompts
 # MASTER PROMPT — GENERATE COMPLETE.txt
 Antigravity Training Pipeline Prompt.md
+
+# technical report 1.0
+Quantum_EEG_Signal_Classifier_Complete_Technical_Report.pdf
+Quantum_EEG_Signal_Classifier_Enhanced_Technical_Report.pdf
+Quantum_EEG_Signal_Classifier_Enhanced_Technical_Report_v2.pdf generate_report.py
+# MASTER PROMPT — GENERATE COMPLETE.txt
+
+# Internal report generation
+generate_report.py
+
+# Internal AI/development prompt
+\# MASTER PROMPT — GENERATE COMPLETE.txt
